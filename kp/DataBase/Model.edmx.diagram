@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9ce0a77caa9a4045b8c7a42009eb3c56" Name="Diagram1">
+        <EntityTypeShape EntityType="KPModel.Clients" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KPModel.Group_Clients" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="KPModel.Group_Services" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KPModel.Group_Staff" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KPModel.Request" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="KPModel.Roles" Width="1.5" PointX="5.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KPModel.Services" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="KPModel.Staff" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KPModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KPModel.Users" Width="1.5" PointX="8" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="KPModel.FK__Clients__conditi__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="KPModel.FK__Request__client__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="KPModel.FK__Services__group___4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="KPModel.FK__Staff__condition__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="KPModel.FK__Request__service__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="KPModel.FK__Request__staff__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="KPModel.FK__Users__role_id__267ABA7A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,68 @@
+﻿<Page
+      x:Class="kp.views.managerpages.MainManagerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:cm="clr-namespace:System.ComponentModel;assembly=System"
+      xmlns:local="clr-namespace:kp.views.managerpages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1050"
+      Title="MainManagerPage">
+    <!--<Page.Resources>
+        <cm:BackgroundWorker x:Key="backgroundWorker" 
+      WorkerReportsProgress="True" WorkerSupportsCancellation="True"
+      DoWork="backgroundWorker_DoWork"/>
+    </Page.Resources>-->
+
+    <Grid Background="WhiteSmoke">
+        <StackPanel Background="WhiteSmoke"
+                    HorizontalAlignment="Left" 
+                    Width="199"
+                    Height="101"
+                    VerticalAlignment="Top"
+                    Opacity="1"
+                    >
+            <TextBlock HorizontalAlignment="Center" 
+                       Text="Пользователь:"
+                       Margin="0,15,0,0"/>
+            <TextBlock Name="login"
+                       TextAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Center"
+                       Text="Вид пользователя:"/>
+            <TextBlock Name="type"
+                       TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Border Background="GhostWhite" 
+                    BorderBrush="Black" 
+                    BorderThickness="3"
+                    CornerRadius="3,3,3,3">
+                <Button Content="Заявки"
+                            FontSize="20"
+                            Margin="4"
+                        Background="#FFFFFBFB" 
+                        BorderThickness="0,0,0,0" 
+                        Name="Request"
+                        Click="Request_Click"
+                         />
+            </Border>
+            <Border Background="GhostWhite" 
+                    BorderBrush="Black" 
+                    BorderThickness="3"
+                    CornerRadius="3,3,3,3" Margin="0,20,0,0"
+                    >
+
+                <Button Content="Выполненные заявки"
+                            FontSize="20"
+                            Margin="4"
+                        Background="#FFFFFBFB" 
+                        BorderThickness="0,0,0,0"
+                        Name="FinishedRequest"
+                        Click="FinishedRequest_Click"
+                         />
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>
+
